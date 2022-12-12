@@ -1,0 +1,39 @@
+//colors
+$color-primary: #25b3f1;
+$color-primary-light: rgba($color-primary, 7%);
+$color-light: #fff;
+$color-dark: #212529;
+$color-muted: #a3a9b9;
+$color-grey: #e9ecef;
+$color-font: #555555;
+$color-bg-highlighted: #f9fafc;
+
+//breakpoints
+$width-xl: 1400px;
+$width-lg: 1200px;
+$width-md: 992px;
+$width-sm: 768px;
+$width-xs: 576px;
+
+$height-sm: 768px;
+$height-xs: 576px;
+
+//other
+$border-radius-sm: 4px;
+$border-radius-md: 10px;
+$box-shadow-sm: 0 2px 6px 0 rgba(#000, 0.3);
+$box-shadow-card-image: 0 10px 25px rgb(#000, 0.15);
+$transition-base: 0.3s;
+
+//Export to use variables in JS
+:export {
+  widthXl: $width-xl;
+  widthLg: $width-lg;
+  widthMd: $width-md;
+  widthSm: $width-sm;
+  widthXs: $width-xs;
+
+  colorPrimary: $color-primary;
+  colorDark: $color-dark;
+  colorBgHighlighted: $color-bg-highlighted;
+}

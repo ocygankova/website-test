@@ -1,0 +1,26 @@
+@import 'styles/variables.module';
+
+.portfolio {
+  margin: 0 -14px;
+  padding: 40px 0;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+  @media (max-width: $width-xs) {
+    flex-direction: column;
+  }
+}
+
+.column {
+  padding: 0 14px;
+  width: 33.333%;
+  margin-bottom: 44px;
+
+  @media (max-width: $width-md) {
+    width: 50%;
+  }
+  @media (max-width: $width-xs) {
+    width: 100%;
+  }
+}

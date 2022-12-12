@@ -1,0 +1,116 @@
+@import 'styles/variables.module';
+
+.section {
+  padding: 40px 0;
+
+  @media (max-width: $width-xs) {
+    padding: 20px 0;
+  }
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: $color-dark;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @media (max-width: $width-xs) {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
+}
+
+.wrapper {
+  margin: 0 -12px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (max-width: $width-md) {
+    justify-content: flex-start;
+  }
+  @media (max-width: $width-xs) {
+    flex-direction: column;
+  }
+}
+
+.column {
+  padding: 0 12px;
+  width: 33.333%;
+  margin-bottom: 24px;
+
+  @media (max-width: $width-md) {
+    width: 50%;
+  }
+  @media (max-width: $width-xs) {
+    width: 100%;
+  }
+}
+
+.card {
+  padding: 50px 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid $color-grey;
+  border-radius: $border-radius-md;
+  transition: $transition-base;
+
+  @media (max-width: $width-md) {
+    padding: 20px 30px 30px;
+  }
+  @media (min-width: $width-md) {
+    &:hover {
+      border-color: $color-primary;
+      box-shadow: $box-shadow-sm;
+    }
+  }
+}
+
+.icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-primary-light;
+  color: $color-primary;
+  margin-bottom: 30px;
+
+  @media (max-width: $width-md) {
+    margin-bottom: 20px;
+  }
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $color-dark;
+  margin-bottom: 36px;
+
+  @media (max-width: $width-md) {
+    margin-bottom: 20px;
+  }
+}
+
+.text {
+  margin-bottom: 20px;
+}
+
+.link {
+  display: inline-block;
+  margin-top: auto;
+  font-size: 1.1rem;
+  color: $color-primary;
+  border-bottom: 1px solid transparent;
+  transition: $transition-base;
+
+  &:hover {
+    color: $color-font;
+    border-bottom-color: $color-font;
+  }
+}

@@ -1,0 +1,67 @@
+@import 'styles/variables.module';
+
+.link {
+  &:hover {
+    .imgWrapper {
+      border-color: $color-primary;
+      box-shadow: $box-shadow-card-image;
+    }
+
+    .title {
+      color: $color-primary;
+    }
+
+    .readMore {
+      color: $color-dark;
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.imgWrapper {
+  border: 1px solid $color-grey;
+  border-radius: $border-radius-md;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 240px;
+  margin-bottom: 30px;
+  transition: $transition-base;
+}
+
+.image {
+  object-position: left;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $color-dark;
+  margin-bottom: 10px;
+  transition: $transition-base;
+}
+
+.bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.readMore {
+  color: $color-primary;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: $transition-base;
+}
+
+.date {
+  color: $color-muted;
+}

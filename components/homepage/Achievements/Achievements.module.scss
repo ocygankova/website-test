@@ -1,0 +1,58 @@
+@import 'styles/variables.module';
+
+.section {
+  padding: 40px 0;
+  background-color: $color-primary-light;
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  @media (max-width: $width-md) {
+    flex-direction: column;
+  }
+}
+
+.item {
+  width: 33.333%;
+  padding: 0 30px 30px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $width-md) {
+    width: auto;
+  }
+}
+
+.amount {
+  font-size: 4rem;
+  font-weight: 700;
+  color: $color-primary;
+
+  @media (max-width: $width-md) {
+    font-size: 3rem;
+  }
+}
+
+.title {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: $color-muted;
+  margin-bottom: 30px;
+
+  @media (max-width: $width-md) {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+}
+
+.description {
+  font-size: 1.25rem;
+  color: $color-dark;
+
+  @media (max-width: $width-md) {
+    font-size: 1.1rem;
+  }
+}

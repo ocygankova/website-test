@@ -1,0 +1,45 @@
+@import 'reset';
+@import 'variables.module';
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-width: 340px;
+  height: 100%;
+  color: $color-font;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+#__next {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+header {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
